@@ -1,2 +1,3 @@
-# ripe-warehouse-api-js
-Simple Javascript API client for RIPE Warehouse
+# Ripe Warehouse API-JS
+
+Simple Javascript API client for RIPE Warehouse.
