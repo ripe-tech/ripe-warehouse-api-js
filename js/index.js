@@ -1,4 +1,4 @@
 export * from "./base";
-export * from "./pickup";
-export * from "./shipment";
-export * from "./tracking";
+export * from "./sales_fact";
+export * from "./shipment_fact";
+

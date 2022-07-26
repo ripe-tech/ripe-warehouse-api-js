@@ -4,12 +4,12 @@ import { PickupAPI } from "./pickup";
 import { ShipmentAPI } from "./shipment";
 import { TrackingAPI } from "./tracking";
 
-const BASE_URL = "https://express.api.dhl.com/mydhlapi/";
+const BASE_URL = "http://localhost:8080/api/";
 
 export class API extends mix(BaseAPI).with(PickupAPI, ShipmentAPI, TrackingAPI) {
     constructor(kwargs = {}) {
         super(kwargs);
-        this.baseUrl = conf("DHL_BASE_URL", BASE_URL);
+        this.baseUrl = conf("WAREHOUSE_BASE_URL", BASE_URL);
         this.username = conf("DHL_USERNAME", null);
         this.password = conf("DHL_PASSWORD", null);
         this.baseUrl = kwargs.baseUrl === undefined ? this.baseUrl : kwargs.baseUrl;
