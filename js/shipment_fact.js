@@ -1,6 +1,6 @@
 export const Shipemnt_Fact_API = superclass =>
     class extends superclass {
-        async schedulePickup(payload, options = {}) {
+        async getShipmentfacts(payload, options = {}) {
             const url = this.baseUrl + "shipments";
             const response = await this.get(url, {
                 dataJ: payload,
@@ -8,7 +8,7 @@ export const Shipemnt_Fact_API = superclass =>
             });
             return response;
         }
-        async schedulePickup(payload, options = {}) {
+        async postShipmentFact(payload, options = {}) {
             const url = this.baseUrl + "shipments";
             const response = await this.post(url, {
                 dataJ: payload,
