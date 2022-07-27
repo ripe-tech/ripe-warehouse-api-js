@@ -1,12 +1,11 @@
 import { API as BaseAPI, conf, load, mix, verify } from "yonius";
 
-import { PickupAPI } from "./pickup";
-import { ShipmentAPI } from "./shipment";
-import { TrackingAPI } from "./tracking";
+import { SalesFactAPI } from "./sales_fact";
+import { ShipmentFactAPI } from "./shipment_fact";
 
 const BASE_URL = "http://localhost:8080/api/";
 
-export class API extends mix(BaseAPI).with(PickupAPI, ShipmentAPI, TrackingAPI) {
+export class API extends mix(BaseAPI).with(SalesFactAPI, ShipmentFactAPI) {
     constructor(kwargs = {}) {
         super(kwargs);
         this.baseUrl = conf("WAREHOUSE_BASE_URL", BASE_URL);
