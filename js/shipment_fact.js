@@ -1,4 +1,4 @@
-export const ShipemntFactAPI = superclass =>
+export const ShipmentFactAPI = superclass =>
     class extends superclass {
         async getShipmentfacts(payload, options = {}) {
             const url = this.baseUrl + "shipments";
