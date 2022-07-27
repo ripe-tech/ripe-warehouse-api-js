@@ -1,4 +1,4 @@
-export const Sales_Fact_API = superclass =>
+export const SalesFactAPI = superclass =>
     class extends superclass {
         async getSalesFacts(payload, options = {}) {
             const url = this.baseUrl + "sales";
