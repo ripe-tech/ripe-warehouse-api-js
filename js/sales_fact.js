@@ -8,4 +8,4 @@ export const SalesFactAPI = superclass =>
             });
             return response;
         }
-    }
+    };

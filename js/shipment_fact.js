@@ -8,6 +8,7 @@ export const ShipmentFactAPI = superclass =>
             });
             return response;
         }
+
         async postShipmentFact(payload, options = {}) {
             const url = this.baseUrl + "shipments";
             const response = await this.post(url, {
@@ -16,4 +17,4 @@ export const ShipmentFactAPI = superclass =>
             });
             return response;
         }
-    }
+    };
