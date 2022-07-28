@@ -1,7 +1,7 @@
 {
-    "name": "dhl-api",
-    "version": "0.6.2",
-    "description": "The RIPE DHL API client",
+    "name": "warehouse-api",
+    "version": "0.1.0",
+    "description": "The RIPE WAREHOUSE API client",
     "keywords": [
         "api",
         "client",
