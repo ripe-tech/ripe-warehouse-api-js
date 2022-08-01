@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-* an API for the ripe-warehouse
+* Initial API client version. [#7](https://github.com/ripe-tech/ripe-warehouse/issues/7)
 
 ## Changed
 
