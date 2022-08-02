@@ -6,7 +6,7 @@ export const ShipmentFactAPI = superclass =>
             return response;
         }
 
-        async postShipmentFact(payload, options = {}) {
+        async createShipmentFact(payload, options = {}) {
             const url = this.baseUrl + "shipments";
             const response = await this.post(url, {
                 dataJ: payload,
