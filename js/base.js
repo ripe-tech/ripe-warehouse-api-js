@@ -1,4 +1,4 @@
-import { API as BaseAPI, conf, load, mix, verify } from "yonius";
+import { API as BaseAPI, conf, load, mix } from "yonius";
 
 import { SalesFactAPI } from "./sales_fact";
 import { ShipmentFactAPI } from "./shipment_fact";
