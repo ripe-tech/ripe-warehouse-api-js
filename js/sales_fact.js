@@ -1,11 +1,8 @@
 export const SalesFactAPI = superclass =>
     class extends superclass {
-        async getSalesFacts(payload, options = {}) {
+        async listSalesFacts(options = {}) {
             const url = this.baseUrl + "sales";
-            const response = await this.get(url, {
-                dataJ: payload,
-                ...options
-            });
+            const response = await this.get(url, {});
             return response;
         }
     };
