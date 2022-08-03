@@ -23,9 +23,9 @@
         "url": "https://www.platforme.com"
     },
     "main": "dist/ripe-warehouse-api.cjs.js",
-    "unpkg": "dist//ripe-warehouse-api.umd.js",
-    "module": "dist//ripe-warehouse-api.esm.js",
-    "browser": "dist//ripe-warehouse-api.umd.js",
+    "unpkg": "dist/ripe-warehouse-api.umd.js",
+    "module": "dist/ripe-warehouse-api.esm.js",
+    "browser": "dist/ripe-warehouse-api.umd.js",
     "files": [
         "LICENSE",
         "dist/**/*",
@@ -45,7 +45,7 @@
         "watch": "rollup -c -w"
     },
     "dependencies": {
-        "yonius": "^0.6.5"
+        "yonius": "^0.11.7"
     },
     "devDependencies": {
         "@babel/core": "^7.12.10",

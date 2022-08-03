@@ -2,7 +2,7 @@ export const ShipmentFactAPI = superclass =>
     class extends superclass {
         async listShipmentfacts(options = {}) {
             const url = this.baseUrl + "shipments";
-            const response = await this.get(url, {});
+            const response = await this.get(url, options);
             return response;
         }
 
