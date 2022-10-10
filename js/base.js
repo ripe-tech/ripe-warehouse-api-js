@@ -1,11 +1,11 @@
 import { API as BaseAPI, conf, load, mix } from "yonius";
 
-import { SalesFactAPI } from "./sales_fact";
-import { ShipmentFactAPI } from "./shipment_fact";
+import { SalesAPI } from "./sales";
+import { ShipmentAPI } from "./shipment";
 
 const BASE_URL = "https://ripe-warehouse-ci.platforme.com/api/";
 
-export class API extends mix(BaseAPI).with(SalesFactAPI, ShipmentFactAPI) {
+export class API extends mix(BaseAPI).with(SalesAPI, ShipmentAPI) {
     constructor(kwargs = {}) {
         super(kwargs);
         this.baseUrl = conf("RIPE_WAREHOUSE_URL", BASE_URL);
